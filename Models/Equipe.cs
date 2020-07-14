@@ -16,9 +16,19 @@ namespace E_PLAYERS.Models
         public Equipe(){
             CreateFolderAndFile(PATH);
         }
+        /// <summary>
+        /// Preparar Linha
+        /// </summary>
+        /// <param name="e">Equipe</param>
+        /// <returns>Retorna a Linha no arquivo csv</returns>
         private string PrepararLinha(Equipe e){
             return $"{e.IdEquipe};{e.Nome};{e.Imagem}";
         }
+        
+        /// <summary>
+        /// Adiciona
+        /// </summary>
+        /// <param name="e">Equipe</param>
         public void Create(Equipe e){
             string[] linha = {PrepararLinha(e)};
             File.AppendAllLines(PATH, linha);
