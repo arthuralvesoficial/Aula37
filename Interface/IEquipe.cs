@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Aula37E_Players_AspNETCore.Models;
+using E_PLAYERS.Models;
 
 namespace E_PLAYERS.Interface
 {

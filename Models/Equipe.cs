@@ -1,14 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Aula37E_Players_AspNETCore.Models;
 using E_PLAYERS.Interface;
 
-namespace Aula37E_Players_AspNETCore.Models
+namespace E_PLAYERS.Models
 {
     public class Equipe : EPlayersBase , IEquipe
     {
         public int IdEquipe { get; set; }
-        public string Nome { get; set; }
+        public string Nome { get; set; }    
         public string Imagem { get; set; }
 
         private const string PATH = "Database/equipe.csv";
