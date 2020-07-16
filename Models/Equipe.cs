@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Aula37E_Players_AspNETCore.Models;
+using E_PLAYERS.Models;
 using E_PLAYERS.Interface;
 
 namespace E_PLAYERS.Models
